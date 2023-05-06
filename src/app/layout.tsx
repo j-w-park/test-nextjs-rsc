@@ -1,4 +1,4 @@
-import { Inter } from 'next/font/google';
+import { JetBrains_Mono } from 'next/font/google';
 import type { ReactNode } from 'react';
 import './globals.css';
 
@@ -6,7 +6,7 @@ interface Props {
   children: ReactNode;
 }
 
-const inter = Inter({ subsets: ['latin'] });
+const font = JetBrains_Mono({ subsets: ['latin'] });
 
 export const metadata = {
   title: 'Create Next App',
@@ -16,7 +16,7 @@ export const metadata = {
 export default function RootLayout(props: Props) {
   return (
     <html lang="en">
-      <body className={inter.className}>{props.children}</body>
+      <body className={font.className}>{props.children}</body>
     </html>
   );
 }
