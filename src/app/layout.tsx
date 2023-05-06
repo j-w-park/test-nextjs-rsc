@@ -1,3 +1,4 @@
+import StyledJsxRegistry from '@/components/StyledJsxRegistry';
 import type { Metadata } from 'next';
 import { JetBrains_Mono } from 'next/font/google';
 import type { ReactNode } from 'react';
@@ -17,7 +18,9 @@ export const metadata: Metadata = {
 export default function RootLayout(props: Props) {
   return (
     <html lang="en">
-      <body className={font.className}>{props.children}</body>
+      <body className={font.className}>
+        <StyledJsxRegistry>{props.children}</StyledJsxRegistry>
+      </body>
     </html>
   );
 }
