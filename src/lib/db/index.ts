@@ -5,10 +5,13 @@ export const db = new Pool(config);
 
 export const initializeDB = async () => {
   await db.query(`
-    CREATE TABLE IF NOT EXISTS users (
+    CREATE TABLE IF NOT EXISTS todos (
       id SERIAL PRIMARY KEY,
-      email TEXT UNIQUE NOT NULL,
-      password TEXT NOT NULL
+      title VARCHAR(255) NOT NULL,
+      description VARCHAR(255) NOT NULL,
+      status VARCHAR(255) NOT NULL,
+      created_at TIMESTAMP DEFAULT NOW(),
+      updated_at TIMESTAMP DEFAULT NOW()
     );
   `);
 };
