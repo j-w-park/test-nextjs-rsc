@@ -1,0 +1,18 @@
+aside {
+  color: #fff;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+ul {
+  display: flex;
+  gap: 1rem;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}

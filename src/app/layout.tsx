@@ -3,6 +3,7 @@ import { initializeDB } from '@/lib/db';
 import type { Metadata } from 'next';
 import { JetBrains_Mono } from 'next/font/google';
 import type { ReactNode } from 'react';
+import { Header } from './Header';
 import './globals.css';
 
 initializeDB();
@@ -22,6 +23,7 @@ export default function RootLayout(props: Props) {
   return (
     <html lang="en">
       <body className={font.className}>
+        <Header />
         <StyledJsxRegistry>{props.children}</StyledJsxRegistry>
       </body>
     </html>
