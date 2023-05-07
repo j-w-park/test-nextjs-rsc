@@ -65,6 +65,10 @@
   margin: 0.67em 0;
 }
 
+:where(p) {
+  margin: 0;
+}
+
 /* Grouping content
    * ========================================================================== */
 
@@ -353,15 +357,4 @@
 :where([aria-hidden='false' i][hidden]:not(:focus)) {
   clip: rect(0, 0, 0, 0);
   position: absolute;
-}
-
-:where(p) {
-  margin: 0;
-}
-
-:where(main) {
-  width: 100vw;
-  height: 100svh;
-  display: flex;
-  flex-direction: column;
 }
