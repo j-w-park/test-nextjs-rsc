@@ -10,6 +10,7 @@
     "format": "prettier --write ./src"
   },
   "dependencies": {
+    "pg": "^8.10.0",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
@@ -17,6 +18,7 @@
   "devDependencies": {
     "@types/eslint": "^8",
     "@types/node": "^20.1.0",
+    "@types/pg": "^8",
     "@types/prettier": "^2",
     "@types/react": "^18.2.5",
     "@types/react-dom": "^18.2.4",
