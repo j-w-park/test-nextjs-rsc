@@ -7,8 +7,8 @@ export const Header = () => {
       <nav>
         <ul id="app-header-container-link">
           <li>
-            <Link id="app-header-link" href="/add">
-              Add
+            <Link id="app-header-link" href="./todo">
+              Todo
             </Link>
           </li>
         </ul>
