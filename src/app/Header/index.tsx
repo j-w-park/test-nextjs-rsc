@@ -18,6 +18,8 @@ export const Header = () => {
         return [{ title: 'Todo', href: '/todo' }];
       case '/todo':
         return [{ title: 'Add', href: '/todo/add' }];
+      case '/todo/add':
+        return [{ title: 'Back', href: '/todo' }];
       default:
         return [];
     }
