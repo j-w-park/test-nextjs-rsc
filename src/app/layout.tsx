@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { JetBrains_Mono } from 'next/font/google';
 import type { ReactNode } from 'react';
 import { Header } from './Header';
+import './app.css';
 import './globals.css';
 
 const font = JetBrains_Mono({ subsets: ['latin'] });

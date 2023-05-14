@@ -4,7 +4,6 @@ import axios from 'axios';
 import { useRouter } from 'next/navigation';
 import useMutation from 'swr/mutation';
 import type { Todo } from '../api/types';
-import './page.css';
 
 export default function NewTodo() {
   const router = useRouter();
@@ -24,9 +23,10 @@ export default function NewTodo() {
   );
 
   return (
-    <main>
+    <main className="container-main">
       <h1>New Todo</h1>
       <form
+        id="form-add-todo"
         onSubmit={(e) => {
           e.preventDefault();
           const formData = new FormData(e.currentTarget);
@@ -35,11 +35,11 @@ export default function NewTodo() {
           signUp.trigger({ title, description });
         }}
       >
-        <div id="container-title">
+        <div id="form-add-todo-title">
           <label htmlFor="title">title</label>
           <input required id="title" name="title" />
         </div>
-        <div id="container-description">
+        <div id="form-add-todo-description">
           <label htmlFor="description">description</label>
           <textarea required id="description" name="description" rows={10} />
         </div>

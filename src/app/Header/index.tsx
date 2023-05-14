@@ -1,14 +1,15 @@
 import Link from 'next/link';
-import './index.css';
 
 export const Header = () => {
   return (
-    <aside>
+    <aside id="app-header">
       <h1>Todo list</h1>
       <nav>
-        <ul>
+        <ul id="app-header-container-link">
           <li>
-            <Link href="/add">Add</Link>
+            <Link id="app-header-link" href="/add">
+              Add
+            </Link>
           </li>
         </ul>
       </nav>
