@@ -1,6 +1,6 @@
 export default async function Home() {
   return (
-    <main className="container-main">
+    <main id="main-container">
       <h1>Home?</h1>
       <p>no content.</p>
     </main>

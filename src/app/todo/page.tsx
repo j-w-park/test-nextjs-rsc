@@ -13,10 +13,10 @@ export default async function TodoList() {
   const { rows: todos } = await db.query<Todo>('SELECT * FROM todos');
   console.log('number of rows: ', todos.length);
   return (
-    <main className="container-main">
+    <main id="main-container" style={{ gap: '1rem' }}>
       <h1>{new Date().toISOString()}</h1>
       <ClearButton />
-      <ul className="container-todo">
+      <ul id="todo">
         {todos.map((todo) => (
           <TodoItem key={todo.id} todo={todo} />
         ))}

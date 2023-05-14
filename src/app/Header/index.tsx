@@ -27,14 +27,12 @@ export const Header = () => {
 
   return (
     <aside id="app-header">
-      <h1>
-        <Link className="app-header-link" href="/">
-          React Server Component Test
-        </Link>
-      </h1>
-      <nav id="app-header-nav">
+      <Link id="link-home" href="/">
+        <h1>React Server Component Test</h1>
+      </Link>
+      <nav>
         {menus.map((menu) => (
-          <Link className="app-header-link" key={menu.href} href={menu.href}>
+          <Link className="link" key={menu.href} href={menu.href}>
             {menu.title}
           </Link>
         ))}

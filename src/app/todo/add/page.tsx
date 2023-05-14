@@ -27,7 +27,7 @@ export default function AddTodo() {
   );
 
   return (
-    <main className="container-main">
+    <main id="main-container">
       <h1>New Todo</h1>
       <form
         id="form-add-todo"
@@ -39,11 +39,11 @@ export default function AddTodo() {
           signUp.trigger({ title, description });
         }}
       >
-        <div id="form-add-todo-title">
+        <div id="title">
           <label htmlFor="title">title</label>
           <input required id="title" name="title" />
         </div>
-        <div id="form-add-todo-description">
+        <div id="description">
           <label htmlFor="description">description</label>
           <textarea required id="description" name="description" rows={10} />
         </div>
