@@ -7,10 +7,10 @@
  * updated_at   TIMESTAMP     DEFAULT NOW()
  */
 export interface Todo {
-  id: number;
-  title: string;
-  description: string;
-  status: 'NOT_STARTED' | 'IN_PROGRESS' | 'COMPLETED';
-  created_at: string;
-  updated_at: string;
+  readonly id: number;
+  readonly title: string;
+  readonly description: string;
+  readonly status: 'NOT_STARTED' | 'IN_PROGRESS' | 'COMPLETED';
+  readonly created_at: Date;
+  readonly updated_at: Date;
 }
