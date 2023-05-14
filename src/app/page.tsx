@@ -1,10 +1,10 @@
+import TodoList from './TodoList';
 import './page.css';
 
-export default function Home() {
+export default async function Home() {
   return (
     <main>
-      <h1>Page</h1>
-      <p>This is content.</p>
+      <TodoList />
     </main>
   );
 }
