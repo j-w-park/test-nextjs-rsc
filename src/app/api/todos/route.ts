@@ -22,3 +22,12 @@ export async function POST(request: Request) {
     return new Response(JSON.stringify(e), { status: 500 });
   }
 }
+
+export async function DELETE() {
+  try {
+    await db.query('TRUNCATE TABLE todos');
+    return new Response(null, { status: 204 });
+  } catch (e) {
+    return new Response(JSON.stringify(e), { status: 500 });
+  }
+}
