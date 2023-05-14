@@ -17,7 +17,7 @@ export default function AddTodo() {
         console.log(err);
       },
       onSuccess: () => {
-        router.replace('/');
+        router.replace('/todo');
       },
     },
   );
