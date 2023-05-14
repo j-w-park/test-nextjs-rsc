@@ -2,7 +2,7 @@ import StyledJsxRegistry from '@/components/StyledJsxRegistry';
 import type { Metadata } from 'next';
 import { JetBrains_Mono } from 'next/font/google';
 import type { ReactNode } from 'react';
-import { Header } from './Header';
+import { Header } from './client-components/Header';
 import './app.css';
 import './globals.css';
 

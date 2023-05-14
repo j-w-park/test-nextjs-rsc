@@ -1,6 +1,6 @@
 import { db } from '@/repository/db';
-import Item from './TodoItem';
 import { Todo } from './api/types';
+import { TodoItem } from './client-components/TodoItem';
 
 export const dynamic = 'force-dynamic';
 
@@ -12,7 +12,7 @@ export default async function TodoList() {
       <h1>{new Date().toISOString()}</h1>
       <ul className="container-todo">
         {todos.map((todo) => (
-          <Item key={todo.id} todo={todo} />
+          <TodoItem key={todo.id} todo={todo} />
         ))}
       </ul>
     </main>

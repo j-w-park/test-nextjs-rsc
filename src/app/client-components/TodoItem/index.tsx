@@ -6,6 +6,6 @@ interface Props {
   todo: Todo;
 }
 
-export default function Item(props: Props) {
+export const TodoItem = (props: Props) => {
   return <p>{props.todo.title}</p>;
-}
+};
