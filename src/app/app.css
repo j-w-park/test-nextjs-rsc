@@ -22,7 +22,7 @@
   justify-content: space-between;
   padding: 0 1rem;
 }
-#app-header-container-link {
+#app-header-nav {
   display: flex;
   gap: 1rem;
 }

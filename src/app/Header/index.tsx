@@ -30,16 +30,12 @@ export const Header = () => {
           React Server Component Test
         </Link>
       </h1>
-      <nav>
-        <ul id="app-header-container-link">
-          {menus.map((menu) => (
-            <li key={menu.href}>
-              <Link className="app-header-link" href={menu.href}>
-                {menu.title}
-              </Link>
-            </li>
-          ))}
-        </ul>
+      <nav id="app-header-nav">
+        {menus.map((menu) => (
+          <Link className="app-header-link" key={menu.href} href={menu.href}>
+            {menu.title}
+          </Link>
+        ))}
       </nav>
     </aside>
   );
