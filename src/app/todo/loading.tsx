@@ -1,5 +1,5 @@
 export default function Loading() {
-  console.log('Loading /...');
+  console.log('Loading /todo...');
   return (
     <div>
       <p>Loading...</p>
