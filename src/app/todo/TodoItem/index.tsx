@@ -1,5 +1,3 @@
-'use client';
-
 import { Todo } from '@/app/api/types';
 
 interface Props {
