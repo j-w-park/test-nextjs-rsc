@@ -1,4 +1,4 @@
-import { db } from '@/lib/db';
+import { db } from '@/repository/db';
 import { Todo } from '../types';
 
 export async function GET() {
