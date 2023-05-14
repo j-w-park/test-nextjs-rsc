@@ -1,6 +1,6 @@
 import { db } from '@/repository/db';
 import { Todo } from '../api/types';
-import { TodoItem } from '../client-components/TodoItem';
+import { TodoItem } from './TodoItem';
 
 // https://github.com/vercel/next.js/issues/41851
 // https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config#dynamic
