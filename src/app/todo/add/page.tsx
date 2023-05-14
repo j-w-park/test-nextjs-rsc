@@ -18,6 +18,10 @@ export default function AddTodo() {
       },
       onSuccess: () => {
         router.replace('/todo');
+        // https://nextjs.org/docs/app/building-your-application/routing/linking-and-navigating#soft-navigation
+        // https://github.com/vercel/next.js/issues/42991
+        // https://github.com/vercel/next.js/issues/42546
+        router.refresh();
       },
     },
   );
