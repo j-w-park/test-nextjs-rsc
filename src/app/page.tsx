@@ -2,6 +2,10 @@ import { db } from '@/repository/db';
 import { Todo } from './api/types';
 import { TodoItem } from './client-components/TodoItem';
 
+// https://github.com/vercel/next.js/issues/41851
+// https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config#dynamic
+// Force dynamic rendering and dynamic data fetching of a layout or page by disabling all
+// caching of fetch requests and always revalidating.
 export const dynamic = 'force-dynamic';
 
 export default async function TodoList() {
