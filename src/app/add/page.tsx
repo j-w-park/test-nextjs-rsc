@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation';
 import useMutation from 'swr/mutation';
 import type { Todo } from '../api/types';
 
-export default function NewTodo() {
+export default function AddTodo() {
   const router = useRouter();
 
   const signUp = useMutation(
